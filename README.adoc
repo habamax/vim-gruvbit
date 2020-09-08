@@ -1,0 +1,166 @@
+= GRUVBIT: vim colorscheme
+:experimental:
+:icons: font
+:autofit-option:
+:!source-linenums-option:
+:imagesdir: images
+
+
+* Built using awesome https://github.com/lifepillar/vim-colortemplate[Toolkit for Vim Color Scheme Designers!]
+* Based on gruvbox hard dark background.
+* Mapping to syntax elements are different to gruvbox. Less reddish, more yellowish.
+* Some colors were slightly changed too.
+* Use GUI or terminal with `set termguicolors` for authentic colors. Looks OK
+  though in terminals with standard 256 color palette.
+* No syntax with bold or italic, except Title and Directory are bold.
+* No plugin syntax setup -- only built-ins are highlighted. Waiting for https://github.com/vim/vim/issues/4405[this vim issue] is resolved.
+* Simple.
+
+
+== More than 1000 words
+
+
+image::https://user-images.githubusercontent.com/234774/92465185-eb3a8e00-f1d6-11ea-9f29-85dd3a5a81a3.png[]
+image::https://user-images.githubusercontent.com/234774/92465074-c6deb180-f1d6-11ea-8738-7d4517019cdb.png[]
+image::https://user-images.githubusercontent.com/234774/92464277-95191b00-f1d5-11ea-880a-18865842e4d2.png[]
+image::https://user-images.githubusercontent.com/234774/92464413-c2fe5f80-f1d5-11ea-898a-7091c6ca8cc7.png[]
+image::https://user-images.githubusercontent.com/234774/92464618-11abf980-f1d6-11ea-80f0-3d0a834ba876.png[]
+image::https://user-images.githubusercontent.com/234774/92464971-a282d500-f1d6-11ea-827e-a5d294844a18.png[]
+
+
+== Installation
+
+Using plugin manager::
+    Follow your plugin manager documentation, for example, link:https://github.com/junegunn/vim-plug[vim-plug] does it this way:
++
+[source,vim]
+------------------------------------------------------------------------------
+" Specify a directory for plugins
+call plug#begin('~/.vim/plugged')
+
+Plug 'habamax/vim-gruvbit'
+
+" ... other plugins ...
+
+" Initialize plugin system
+call plug#end()
+
+set termguicolors
+colorscheme gruvbit
+------------------------------------------------------------------------------
+
+Manual with git::
+    Clone this repo to your vim/nvim packages directory:
++
+.Vim on Linux or OSX
+[source,sh]
+------------------------------------------------------------------------------
+git clone https://github.com/habamax/vim-gruvbit ~/.vim/pack/plugins/start/vim-gruvbit
+------------------------------------------------------------------------------
++
+.Neovim on Linux or OSX
+[source,sh]
+------------------------------------------------------------------------------
+git clone https://github.com/habamax/vim-gruvbit ~/.config/nvim/pack/plugins/start/vim-gruvbit
+------------------------------------------------------------------------------
++
+.Vim on Windows
+[source,sh]
+------------------------------------------------------------------------------
+git clone https://github.com/habamax/vim-gruvbit C:/Users/USERNAME/vimfiles/pack/plugins/start/vim-gruvbit <.>
+------------------------------------------------------------------------------
++
+.Neovim on Windows
+[source,sh]
+------------------------------------------------------------------------------
+git clone https://github.com/habamax/vim-gruvbit C:/Users/USERNAME/AppData/Local/nvim/pack/plugins/start/vim-gruvbit <.>
+------------------------------------------------------------------------------
+<.> Change `USERNAME` to your user name
+
+
+Manual::
+    * Download zip archive (available in menu:Code[Download ZIP])
+    * Extract `colors/gruvbit.vim` file into your vim/nvim settings directory
+        ** `~/.vim/colors/gruvbit.vim` -- vim (linux, osx)
+        ** `~/vimfiles/colors/gruvbit.vim` -- vim (windows)
+        ** `~/.config/nvim/colors/gruvbit.vim` -- neovim (linux, osx)
+        ** `~/AppData/Local/nvim/colors/gruvbit.vim` -- neovim (windows)
+
+add to your settings:
+
+[source,vim]
+------------------------------------------------------------------------------
+set termguicolors
+colorscheme gruvbit
+------------------------------------------------------------------------------
+
+
+== Looks good but I want italic comments
+
+Add following to your settings file:
+
+[source,vim]
+------------------------------------------------------------------------------
+
+augroup colorscheme_change | au!
+    au ColorScheme gruvbit hi Comment gui=italic cterm=italic
+augroup END
+
+set termguicolors
+colorscheme gruvbit
+
+------------------------------------------------------------------------------
+
+
+== And bold statements
+
+Add following to your settings file:
+
+[source,vim]
+------------------------------------------------------------------------------
+
+func! s:gruvbit_setup() abort
+    hi Comment gui=italic cterm=italic
+    hi Statement gui=bold cterm=bold
+endfunc
+
+augroup colorscheme_change | au!
+    au ColorScheme gruvbit call s:gruvbit_setup()
+augroup END
+
+set termguicolors
+colorscheme gruvbit
+
+------------------------------------------------------------------------------
+
+== And VertSplit without background colors
+
+[source,vim]
+------------------------------------------------------------------------------
+
+func! s:gruvbit_setup() abort
+    hi Comment gui=italic cterm=italic
+    hi Statement gui=bold cterm=bold
+    hi VertSplit guibg=NONE ctermbg=NONE
+endfunc
+
+augroup colorscheme_change | au!
+    au ColorScheme gruvbit call s:gruvbit_setup()
+augroup END
+
+set termguicolors
+colorscheme gruvbit
+
+------------------------------------------------------------------------------
+
+== What about terminals with semi-transparent backgrounds?
+
+Add this:
+
+[source,vim]
+------------------------------------------------------------------------------
+let g:gruvbit_transp_bg = v:true
+------------------------------------------------------------------------------
+
+image::https://user-images.githubusercontent.com/234774/90171332-023dba00-ddaa-11ea-8080-ca1338b2eb08.png[]
+
