@@ -25,7 +25,6 @@ image::https://user-images.githubusercontent.com/234774/92465074-c6deb180-f1d6-1
 image::https://user-images.githubusercontent.com/234774/92464277-95191b00-f1d5-11ea-880a-18865842e4d2.png[]
 image::https://user-images.githubusercontent.com/234774/92464413-c2fe5f80-f1d5-11ea-898a-7091c6ca8cc7.png[]
 image::https://user-images.githubusercontent.com/234774/92464618-11abf980-f1d6-11ea-80f0-3d0a834ba876.png[]
-image::https://user-images.githubusercontent.com/234774/92464971-a282d500-f1d6-11ea-827e-a5d294844a18.png[]
 
 
 == Installation
@@ -162,5 +161,5 @@ Add this:
 let g:gruvbit_transp_bg = v:true
 ------------------------------------------------------------------------------
 
-image::https://user-images.githubusercontent.com/234774/90171332-023dba00-ddaa-11ea-8080-ca1338b2eb08.png[]
+image::https://user-images.githubusercontent.com/234774/92464971-a282d500-f1d6-11ea-827e-a5d294844a18.png[]
 
