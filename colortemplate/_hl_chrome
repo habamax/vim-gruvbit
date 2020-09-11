@@ -56,7 +56,7 @@ IncSearch        bg0        string
 WildMenu         bg0        preproc
 ColorColumn      none       folded
 Cursor           bg0        fg0
-lCursor          fg0        constant
+lCursor          fg0        special
 
 DiffAdd          none       diffadd
 DiffChange       none       diffchange
