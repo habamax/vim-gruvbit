@@ -50,7 +50,7 @@ ModeMsg          fg0        bg0
 Question         string     none
 
 Todo             bg0        comment
-MatchParen       bg0        special
+MatchParen       bg0        type
 Search           bg0        preproc
 IncSearch        bg0        string
 WildMenu         bg0        preproc
