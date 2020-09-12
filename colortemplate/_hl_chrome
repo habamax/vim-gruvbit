@@ -19,7 +19,7 @@ PmenuSel         bg0        preproc
 PmenuSbar        none       bg1
 PmenuThumb       none       comment
 
-TabLine          none       bg1
+TabLine          comment    bg1
 TabLineFill      none       bg1
 TabLineSel       none       bg0
 
