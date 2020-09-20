@@ -17,3 +17,6 @@ Conceal    comment    none
 Ignore     none       none
 
 Title      statement  none bold
+
+vimNotation -> PreProc
+vimFuncSID -> PreProc

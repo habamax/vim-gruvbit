@@ -13,7 +13,7 @@
 * Use GUI or terminal with `set termguicolors` for authentic colors. Looks OK
   though in terminals with standard 256 color palette.
 * No syntax with bold or italic, except Title and Directory are bold.
-* No plugin syntax setup -- only built-ins are highlighted. Waiting for https://github.com/vim/vim/issues/4405[this vim issue] is resolved.
+* https://github.com/vim/vim/issues/4405[This vim issue] is resolved, so it is safe to add filetype specific highlighting.
 * Simple.
 
 
