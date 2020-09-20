@@ -25,3 +25,4 @@ vimFuncSID            -> PreProc
 asciidoctorListMarker -> PreProc
 asciidoctorOption     -> String
 asciidoctorCaption    -> String
+gdscriptBlockStart    -> Statement
