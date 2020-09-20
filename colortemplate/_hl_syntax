@@ -18,5 +18,10 @@ Ignore     none       none
 
 Title      statement  none bold
 
-vimNotation -> PreProc
-vimFuncSID -> PreProc
+
+colortemplateKey      -> String
+vimNotation           -> PreProc
+vimFuncSID            -> PreProc
+asciidoctorListMarker -> PreProc
+asciidoctorOption     -> String
+asciidoctorCaption    -> String
