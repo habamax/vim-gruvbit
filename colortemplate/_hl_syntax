@@ -26,3 +26,4 @@ asciidoctorListMarker -> PreProc
 asciidoctorOption     -> String
 asciidoctorCaption    -> String
 gdscriptBlockStart    -> Statement
+gitCommitSummary      -> Title
