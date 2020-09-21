@@ -124,7 +124,7 @@ Title      statement  none bold
 
 colortemplateKey        -> Statement
 colortemplateAttr       -> String
-vimNotation             -> PreProc
+vimNotation             -> Type
 vimFuncSID              -> PreProc
 asciidoctorListMarker   -> PreProc
 asciidoctorOption       -> String
