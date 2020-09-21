@@ -19,11 +19,14 @@ Ignore     none       none
 Title      statement  none bold
 
 
-colortemplateKey      -> String
-vimNotation           -> PreProc
-vimFuncSID            -> PreProc
-asciidoctorListMarker -> PreProc
-asciidoctorOption     -> String
-asciidoctorCaption    -> String
-gdscriptBlockStart    -> Statement
-gitCommitSummary      -> Title
+colortemplateKey        -> Statement
+colortemplateAttr       -> String
+vimNotation             -> PreProc
+vimFuncSID              -> PreProc
+asciidoctorListMarker   -> PreProc
+asciidoctorOption       -> String
+asciidoctorCaption      -> String
+asciidoctorLiteralBlock comment none
+gdscriptBlockStart      -> Statement
+gitCommitSummary        -> Title
+
