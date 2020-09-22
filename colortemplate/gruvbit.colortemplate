@@ -126,6 +126,7 @@ colortemplateKey        -> Statement
 colortemplateAttr       -> String
 vimNotation             -> Type
 vimFuncSID              -> PreProc
+vimHiTerm               -> Identifier
 asciidoctorListMarker   -> PreProc
 asciidoctorOption       -> String
 asciidoctorCaption      -> String
