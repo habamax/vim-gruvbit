@@ -135,6 +135,7 @@ asciidoctorCaption      -> String
 asciidoctorLiteralBlock comment none
 gdscriptBlockStart      -> Statement
 gitCommitSummary        -> Title
+cocErrorSign            -> Type
 
 
 ; Terminal
