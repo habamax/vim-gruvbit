@@ -134,6 +134,7 @@ asciidoctorOption       -> String
 asciidoctorCaption      -> String
 asciidoctorLiteralBlock comment none
 gdscriptBlockStart      -> Statement
+gdscriptFunctionName    -> Function
 gitCommitSummary        -> Title
 cocErrorSign            -> Type
 
