@@ -22,7 +22,7 @@ Color: delimiter  #a16946 130
 
 Color: fg0        #ebdbb2 187
 Color: bg0        #1d2021 234
-Color: bg1        #504945 239
+Color: bg1        #404040 238
 Color: folded     #2d3031 236
 Color: visual     #475048 240
 
