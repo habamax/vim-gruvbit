@@ -77,10 +77,10 @@ Underlined       identifier none   underline
 
 Error            fg0        special
 ErrorMsg         fg0        special
-WarningMsg       preproc    bg0
-MoreMsg          fg0        bg0
-ModeMsg          fg0        bg0
-Question         string     none
+ModeMsg          fg0        none   bold
+WarningMsg       preproc    none   bold
+MoreMsg          string     none   bold
+Question         string     none   bold
 
 Todo             bg0        comment
 MatchParen       bg0        type
