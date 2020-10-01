@@ -13,8 +13,6 @@
 * Use GUI or terminal with `set termguicolors` for authentic colors. Looks OK
   though in terminals with standard 256 color palette.
 * No syntax with bold or italic, except Title and Directory are bold.
-* https://github.com/vim/vim/issues/4405[This vim issue] is resolved, so it is safe to add filetype specific highlighting.
-* Simple.
 
 
 == More than 1000 words
@@ -163,3 +161,16 @@ let g:gruvbit_transp_bg = v:true
 
 image::https://user-images.githubusercontent.com/234774/92464971-a282d500-f1d6-11ea-827e-a5d294844a18.png[]
 
+== Statusline Plugins Integration
+
+Gruvbit supports https://github.com/vim-airline/vim-airline[vim-airline] and https://github.com/itchyny/lightline.vim[lightline.vim].
+
+Note though, it wouldn't work if you install gruvbit into `/opt/` directory of vim packages.
+
+For `vim-airline` you don't need to do anything special, for `lightline.vim` add following to your vimrc:
+
+
+[source,vim]
+------------------------------------------------------------------------------
+let g:lightline = {"colorscheme": "gruvbit"}
+------------------------------------------------------------------------------
