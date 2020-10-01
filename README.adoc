@@ -17,13 +17,14 @@
 
 == More than 1000 words
 
+image::https://user-images.githubusercontent.com/234774/94784923-8b9b6100-03d7-11eb-8ff1-54984cbc9481.png[]
+image::https://user-images.githubusercontent.com/234774/94785710-b4702600-03d8-11eb-8eb2-5639ec830d22.png[]
+image::https://user-images.githubusercontent.com/234774/94785825-dc5f8980-03d8-11eb-918c-e8ae68f6b3c7.png[]
+image::https://user-images.githubusercontent.com/234774/94785938-0618b080-03d9-11eb-80aa-641711631c23.png[]
+image::https://user-images.githubusercontent.com/234774/94786982-547a7f00-03da-11eb-985a-f0042b1f79e2.png[]
+image::https://user-images.githubusercontent.com/234774/94787088-7e33a600-03da-11eb-88c1-8b65ee32a5d3.png[]
 
-image::https://user-images.githubusercontent.com/234774/92465185-eb3a8e00-f1d6-11ea-9f29-85dd3a5a81a3.png[]
-image::https://user-images.githubusercontent.com/234774/92465074-c6deb180-f1d6-11ea-8738-7d4517019cdb.png[]
-image::https://user-images.githubusercontent.com/234774/92464277-95191b00-f1d5-11ea-880a-18865842e4d2.png[]
-image::https://user-images.githubusercontent.com/234774/92464413-c2fe5f80-f1d5-11ea-898a-7091c6ca8cc7.png[]
-image::https://user-images.githubusercontent.com/234774/92464618-11abf980-f1d6-11ea-80f0-3d0a834ba876.png[]
-
+NOTE: Comments are not italic by default. Use <<italic, setup instructions>> to make them italic if you need it.
 
 == Installation
 
@@ -92,6 +93,7 @@ colorscheme gruvbit
 ------------------------------------------------------------------------------
 
 
+[[italic]]
 == Looks good but I want italic comments
 
 Add following to your settings file:
@@ -159,7 +161,7 @@ Add this:
 let g:gruvbit_transp_bg = v:true
 ------------------------------------------------------------------------------
 
-image::https://user-images.githubusercontent.com/234774/92464971-a282d500-f1d6-11ea-827e-a5d294844a18.png[]
+image::https://user-images.githubusercontent.com/234774/94787703-50029600-03db-11eb-9746-3202af256060.png[]
 
 == Statusline Plugins Integration
 
