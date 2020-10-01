@@ -174,3 +174,7 @@ For `vim-airline` you don't need to do anything special, for `lightline.vim` add
 ------------------------------------------------------------------------------
 let g:lightline = {"colorscheme": "gruvbit"}
 ------------------------------------------------------------------------------
+
+image::https://user-images.githubusercontent.com/234774/94784376-bd5ff800-03d6-11eb-990b-3a4634615eb5.png[]
+
+image::https://user-images.githubusercontent.com/234774/94784542-fa2bef00-03d6-11eb-8131-153e8cbce7c8.png[]
