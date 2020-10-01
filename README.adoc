@@ -165,18 +165,21 @@ image::https://user-images.githubusercontent.com/234774/94787703-50029600-03db-1
 
 == Statusline Plugins Integration
 
-Gruvbit supports https://github.com/vim-airline/vim-airline[vim-airline] and https://github.com/itchyny/lightline.vim[lightline.vim].
+Gruvbit supports https://github.com/vim-airline/vim-airline[vim-airline]:
+
+image::https://user-images.githubusercontent.com/234774/94784376-bd5ff800-03d6-11eb-990b-3a4634615eb5.png[]
+
+and https://github.com/itchyny/lightline.vim[lightline.vim]:
+
+image::https://user-images.githubusercontent.com/234774/94784542-fa2bef00-03d6-11eb-8131-153e8cbce7c8.png[]
 
 Note though, it wouldn't work if you install gruvbit into `/opt/` directory of vim packages.
 
-For `vim-airline` you don't need to do anything special, for `lightline.vim` add following to your vimrc:
+For `vim-airline` you don't need to do anything special it should automatically pickup gruvbit theme.
 
+For `lightline.vim` add following to your vimrc:
 
 [source,vim]
 ------------------------------------------------------------------------------
 let g:lightline = {"colorscheme": "gruvbit"}
 ------------------------------------------------------------------------------
-
-image::https://user-images.githubusercontent.com/234774/94784376-bd5ff800-03d6-11eb-990b-3a4634615eb5.png[]
-
-image::https://user-images.githubusercontent.com/234774/94784542-fa2bef00-03d6-11eb-8131-153e8cbce7c8.png[]
