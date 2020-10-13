@@ -137,6 +137,7 @@ gdscriptBlockStart      -> Statement
 gdscriptFunctionName    -> Function
 gitCommitSummary        -> Title
 cocErrorSign            -> Type
+SelectDirectoryPrefix   comment none
 
 
 ; Terminal
