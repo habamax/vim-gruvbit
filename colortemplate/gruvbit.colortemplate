@@ -130,7 +130,7 @@ vimHiTerm               -> Identifier
 helpNotVi               -> Comment
 helpExample             -> PreProc
 asciidoctorListMarker   -> PreProc
-asciidoctorOption       -> String
+asciidoctorOption       -> Comment
 asciidoctorCaption      -> String
 asciidoctorLiteralBlock comment none
 gdscriptBlockStart      -> Statement
