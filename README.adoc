@@ -13,6 +13,8 @@
 * Use GUI or terminal with `set termguicolors` for authentic colors. Looks OK
   though in terminals with standard 256 color palette.
 * No syntax with bold or italic, except Title and Directory are bold.
+* Or do you want simple black background? Check link:https://github.com/habamax/vim-habanight[habanight].
+* Or white background? Check link:https://github.com/habamax/vim-polar[polar].
 
 
 == More than 1000 words
