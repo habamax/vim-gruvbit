@@ -92,8 +92,8 @@ lCursor          fg0        special
 
 DiffAdd          none       diffadd
 DiffChange       none       none
-DiffDelete       diffdelete bg0
-DiffText         fg0        difftext
+DiffText         none       difftext
+DiffDelete       diffdelete none
 
 SpellBad         special    none   t=underline g=undercurl s=special
 SpellCap         string     none   t=underline g=undercurl s=string
