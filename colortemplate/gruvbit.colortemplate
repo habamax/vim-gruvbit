@@ -27,9 +27,8 @@ Color: folded     #2d3031 236
 Color: visual     #475048 240
 
 Color: diffadd    #3b5e48 23
-Color: diffdelete #5c3728 52
-Color: diffchange #314a5c 24
 Color: difftext   #496d79 66
+Color: diffdelete #5c3728 52
 
 
 ; Chrome
@@ -92,8 +91,8 @@ Cursor           bg0        fg0
 lCursor          fg0        special
 
 DiffAdd          none       diffadd
-DiffChange       none       diffchange
-DiffDelete       comment    diffdelete
+DiffChange       none       none
+DiffDelete       diffdelete bg0
 DiffText         fg0        difftext
 
 SpellBad         special    none   t=underline g=undercurl s=special
