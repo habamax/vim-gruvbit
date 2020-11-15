@@ -129,9 +129,10 @@ vimHiTerm               -> Identifier
 helpNotVi               -> Comment
 helpExample             -> PreProc
 asciidoctorListMarker   -> PreProc
-asciidoctorOption       comment none
 asciidoctorCaption      -> String
+asciidoctorOption       comment none
 asciidoctorLiteralBlock comment none
+asciidoctorIndented     comment none
 gdscriptBlockStart      -> Statement
 gdscriptFunctionName    -> Function
 gitCommitSummary        -> Title
