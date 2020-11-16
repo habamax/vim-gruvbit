@@ -133,8 +133,6 @@ asciidoctorCaption      -> String
 asciidoctorOption       comment none
 asciidoctorLiteralBlock comment none
 asciidoctorIndented     comment none
-gdscriptBlockStart      -> Statement
-gdscriptFunctionName    -> Function
 gitCommitSummary        -> Title
 cocErrorSign            -> Type
 SelectDirectoryPrefix   comment none
