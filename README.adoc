@@ -15,6 +15,7 @@
 * No syntax with bold or italic, except Title and Directory are bold.
 * Or do you want simple black background? Check link:https://github.com/habamax/vim-habanight[habanight].
 * Or white background? Check link:https://github.com/habamax/vim-polar[polar].
+* Like https://github.com/romainl/Apprentice[Apprentice]? Check link:https://github.com/habamax/vim-alchemist[alchemist].
 
 
 == More than 1000 words
