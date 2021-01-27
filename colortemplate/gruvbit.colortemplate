@@ -10,114 +10,128 @@ Variant:    gui 256
 
 Background: dark
 
-Color: comment    #968772 102
-Color: constant   #d3869b 175
-Color: string     #8ec07c 107
-Color: identifier #83a598 109
-Color: statement  #fabd2f 214
-Color: preproc    #dc9656 215
-Color: type       #fe8019 208
-Color: special    #e9593d 202
-Color: delimiter  #a16946 130
+;;; Color palette
+Color: foreground #ebdbb2 187
+Color: background #1d2021 234
 
-Color: fg0        #ebdbb2 187
-Color: bg0        #1d2021 234
-Color: bg1        #444444 238
-Color: folded     #2d3031 236
-Color: visual     #475048 240
+Color: color00    #000000 16
+Color: color08    #444444 238
 
-Color: diffadd    #3b5e48 23
-Color: difftext   #496d79 66
-Color: diffdelete #5c3728 52
+Color: color01    #e9593d 202
+Color: color09    #fe8019 208
+
+Color: color02    #8ec07c 107
+Color: color10    #3b5e48 23
+
+Color: color03    #dc9656 215
+Color: color11    #fabd2f 214
+
+Color: color04    #83a598 109
+Color: color12    #496d79 66
+
+Color: color05    #d3869b 175
+Color: color13    #a16946 130
+
+Color: color06    #496d79 66
+Color: color14    #475048 240
+
+Color: color07    #968772 102
+Color: color15    #FFFFFF 231
+
+Color: color16    #2d3031 236
+Color: color17    #5c3728 52
+
+Term colors: color00 color01 color02 color03 color04 color05 color06 color07
+Term colors: color08 color09 color10 color11 color12 color13 color14 color15
 
 
 ; Chrome
 
 #if get(g:, '@optionprefix_transp_bg', 0)
-Normal           fg0        none
+Normal           foreground        none
 #else
-Normal           fg0        bg0
+Normal           foreground        background
 #endif
 
-EndOfBuffer      bg1        none
-Statusline       fg0        bg1 bold
-StatuslineNC     comment    bg1
-StatuslineTerm   fg0        bg1 bold
-StatuslineTermNC comment    bg1
-VertSplit        bg1        bg1
+EndOfBuffer      color08    none
+Statusline       foreground color08 bold
+StatuslineNC     color07    color08
+StatuslineTerm   foreground color08 bold
+StatuslineTermNC color07    color08
+VertSplit        color08    color08
 
-Pmenu            none       bg1
-PmenuSel         bg0        preproc
-PmenuSbar        none       bg1
-PmenuThumb       none       comment
+Pmenu            none       color08
+PmenuSel         background color03
+PmenuSbar        none       color08
+PmenuThumb       none       color07
 
-TabLine          comment    bg1
-TabLineFill      none       bg1
-TabLineSel       none       bg0
+TabLine          color07    color08
+TabLineFill      none       color08
+TabLineSel       none       background
 
-ToolbarLine      bg0        folded
-ToolbarButton    none       visual bold
+ToolbarLine      background color16
+ToolbarButton    none       color14 bold
 
-NonText          bg1        none
-SpecialKey       bg1        none
+NonText          color08    none
+SpecialKey       color08    none
 
-Folded           comment    folded
-Visual           none       visual
-VisualNOS        none       comment
-LineNr           comment    none
-FoldColumn       comment    none
-CursorLine       none       folded
-CursorColumn     none       folded
-CursorLineNr     none       folded
-QuickFixLine     none       folded
+Folded           color07    color16
+Visual           none       color14
+VisualNOS        none       color07
+LineNr           color07    none
+FoldColumn       color07    none
+CursorLine       none       color16
+CursorColumn     none       color16
+CursorLineNr     none       color16
+QuickFixLine     none       color16
 SignColumn       none       none
 
-Underlined       identifier none   underline
+Underlined       color04    none    underline
 
-Error            fg0        special
-ErrorMsg         fg0        special
-ModeMsg          fg0        none   bold
-WarningMsg       preproc    none   bold
-MoreMsg          string     none   bold
-Question         string     none   bold
+Error            foreground color01
+ErrorMsg         foreground color01
+ModeMsg          foreground none    bold
+WarningMsg       color03    none    bold
+MoreMsg          color02    none    bold
+Question         color02    none    bold
 
-Todo             bg0        comment
-MatchParen       bg0        type
-Search           bg0        preproc
-IncSearch        bg0        string
-WildMenu         bg0        preproc
-ColorColumn      none       folded
-Cursor           bg0        fg0
-lCursor          fg0        special
+Todo             background color07
+MatchParen       background color09
+Search           background color03
+IncSearch        background color02
+WildMenu         background color03
+ColorColumn      none       color16
+Cursor           background foreground
+lCursor          foreground color01
 
-DiffAdd          none       diffadd
+DiffAdd          none       color10
 DiffChange       none       none
-DiffText         none       difftext
-DiffDelete       diffdelete none
+DiffText         none       color12
+DiffDelete       color17    none
 
-SpellBad         special    none   t=underline g=undercurl s=special
-SpellCap         string     none   t=underline g=undercurl s=string
-SpellLocal       delimiter  none   t=underline g=undercurl s=delimiter
-SpellRare        type       none   t=underline g=undercurl s=type
+SpellBad         color01    none    t=underline g=undercurl s=color01
+SpellCap         color02    none    t=underline g=undercurl s=color02
+SpellLocal       color13    none    t=underline g=undercurl s=color13
+SpellRare        color09    none    t=underline g=undercurl s=color09
 
 
 ; Syntax
 
-Identifier identifier none
-Statement  statement  none
-Constant   constant   none
-String     string     none
-PreProc    preproc    none
-Special    special    none
-Tag        preproc    none
-Delimiter  delimiter  none
-Type       type       none
-Directory  identifier none bold
-Comment    comment    none
-Conceal    comment    none
-Ignore     none       none
+Identifier       color04    none
+Statement        color11    none
+Constant         color05    none
+String           color02    none
+PreProc          color03    none
+Special          color01    none
+Tag              color03    none
+Delimiter        color13    none
+Type             color09    none
+Directory        color04    none    bold
+Comment          color07    none
+Conceal          color07    none
+Ignore           none       none
 
-Title      statement  none bold
+Title            color11    none    bold
 
 
 colortemplateKey        -> Statement
@@ -129,14 +143,9 @@ helpNotVi               -> Comment
 helpExample             -> PreProc
 asciidoctorListMarker   -> PreProc
 asciidoctorCaption      -> String
-asciidoctorOption       comment none
-asciidoctorLiteralBlock comment none
-asciidoctorIndented     comment none
+asciidoctorOption       color07 none
+asciidoctorLiteralBlock color07 none
+asciidoctorIndented     color07 none
 gitCommitSummary        -> Title
 cocErrorSign            -> Type
-SelectDirectoryPrefix   comment none
-
-
-; Terminal
-Term colors: bg0     statement string preproc identifier type special bg1
-Term colors: comment statement string preproc identifier type special fg0
+SelectDirectoryPrefix   color07 none
