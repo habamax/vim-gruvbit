@@ -10,12 +10,11 @@
 * Based on gruvbox hard dark background.
 * Mapping to syntax elements are different to gruvbox. Less reddish, more yellowish.
 * Some colors were slightly changed too.
-* Use GUI or terminal with `set termguicolors` for authentic colors. Looks OK
-  though in terminals with standard 256 color palette.
 * No syntax with bold or italic, except Title and Directory are bold.
-* Or do you want simple black background? Check link:https://github.com/habamax/vim-habanight[habanight].
-* Or white background? Check link:https://github.com/habamax/vim-polar[polar].
-* Like https://github.com/romainl/Apprentice[Apprentice]? Check link:https://github.com/habamax/vim-alchemist[alchemist].
+* Do you want white background? Check link:https://github.com/habamax/vim-polar[polar].
+* Do you want light background? Check link:https://github.com/habamax/vim-psionic[psionic].
+* Do you like black background? Check link:https://github.com/habamax/vim-habanight[habanight].
+* Do you like https://github.com/romainl/Apprentice[Apprentice]? Check link:https://github.com/habamax/vim-alchemist[alchemist].
 
 
 == More than 1000 words
